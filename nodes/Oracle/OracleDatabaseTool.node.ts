@@ -171,7 +171,7 @@ export class OracleDatabaseTool implements INodeType {
 			);
 
 			returnItems = this.helpers.returnJsonArray(
-				result as unknown as IDataObject[]
+				result.rows as unknown as IDataObject[]
 			);
 
 		} catch (error) {
